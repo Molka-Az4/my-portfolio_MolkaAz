@@ -1,75 +1,50 @@
 'use client';
 
-import { FiCode, FiCpu, FiZap, FiBarChart2, FiUsers } from 'react-icons/fi';
+import { FiZap, FiCode, FiUsers } from 'react-icons/fi';
 
 const CATEGORIES = [
   {
-    icon: FiCode,
-    title: 'Development',
+    icon: FiZap,
+    title: 'AI, Automation & Cloud',
     items: [
-      'TypeScript',
-      'JavaScript (ES6+)',
-      'React',
-      'Next.js',
-      'Node.js',
-      'NestJS',
-      'Express',
-      'HTML5',
-      'CSS3',
-      'Tailwind CSS',
+      'Applied & generative AI',
+      'OpenAI integration',
+      'n8n workflow automation',
+      'REST APIs & Webhooks',
+      'Meta & LinkedIn APIs',
+      'AWS (fundamentals)',
+      'IoT systems',
+      'Google Sheets & Google Drive automation',
+      'Google Colab',
     ],
   },
   {
-    icon: FiCpu,
-    title: 'AI & Data Science',
+    icon: FiCode,
+    title: 'Software, Data & Web Development',
     items: [
       'Python',
-      'Pandas & NumPy',
-      'Scikit-learn',
-      'Machine Learning',
-      'NLP Concepts',
-      'LLM-based Apps',
-      'Jupyter / Colab',
-      'Data Cleaning',
-    ],
-  },
-  {
-    icon: FiZap,
-    title: 'Automation & Cloud',
-    items: [
-      'n8n Workflows',
-      'REST APIs & Webhooks',
-      'OpenAI API',
-      'Integration Design',
-      'Git & GitHub',
-      'GitHub Actions (CI/CD)',
-      'Docker (Basics)',
-      'Cloud-oriented Apps',
-    ],
-  },
-  {
-    icon: FiBarChart2,
-    title: 'Data Analytics & BI',
-    items: [
-      'Power BI',
-      'SQL',
-      'MongoDB',
-      'Data Modeling',
-      'KPI Dashboards',
-      'Reporting & Monitoring',
-      'Exploratory Analysis',
+      'JavaScript (ES6+)',
+      'Google Apps Script',
+      'React.js',
+      'HTML & CSS', 
+      'Front-end UI implementation',
+      'API integration patterns',
+      'SQL & Power BI',
+      'Data analysis & visualization',
+      'KPI dashboards & reporting',
     ],
   },
   {
     icon: FiUsers,
-    title: 'Methods & Leadership',
+    title: 'Soft Skills & Ways of Working',
     items: [
-      'Agile / Scrum',
-      'Kanban',
-      'Project Coordination',
-      'Incident & QoS Culture',
-      'Stakeholder Communication',
-      'Documentation & Knowledge Sharing',
+      'Team coordination & collaboration',
+      'Problem-solving & critical thinking',
+      'Strong organization & time management',
+      'Documentation & knowledge sharing',
+      'Curious, detail-oriented & proactive',
+      'Adaptable to emerging technologies',
+      'Clear communication: Arabic · French · English',
     ],
   },
 ];
@@ -77,19 +52,19 @@ const CATEGORIES = [
 export function Skills() {
   return (
     <div className="py-16 md:py-20">
-      {/* Titre */}
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 bg-gradient-to-r from-sky-400 to-emerald-400 bg-clip-text text-transparent">
+      {/* Title */}
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 bg-gradient-to-r from-indigo-400 to-emerald-400 bg-clip-text text-transparent">
         My Creative &amp; Technical Toolkit
       </h2>
 
-      {/* Grid des cartes */}
+      {/* Cards grid */}
       <div className="grid gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3">
         {CATEGORIES.map(({ icon: Icon, title, items }) => (
           <div
             key={title}
             className="relative rounded-3xl border border-slate-800/80 bg-slate-900/60 px-6 py-6 md:px-7 md:py-7 shadow-[0_0_40px_rgba(0,0,0,0.35)]"
           >
-            {/* header de la carte */}
+            {/* Card header */}
             <div className="flex items-center gap-3 mb-5">
               <div className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-800 text-emerald-300">
                 <Icon className="text-xl" />
@@ -99,7 +74,7 @@ export function Skills() {
               </h3>
             </div>
 
-            {/* liste des skills */}
+            {/* Skills list */}
             <div className="flex flex-wrap gap-2">
               {items.map((skill) => (
                 <span

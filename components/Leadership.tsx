@@ -26,7 +26,7 @@ const ROLES: LeadershipRole[] = [
       'Helped align projects with quality and delivery expectations (process, documentation, deadlines).',
       'Supported students on projects mixing embedded systems, data and AI.',
     ],
-    imageSrc: '/clubs/etc-je-banner.png', // ⚠️ mets ici ton image ETC JE
+    imageSrc: '/clubs/etc-je-banner.jpeg', // ⚠️ mets ici ton image ETC JE
     imageAlt: 'ETC Junior Entreprise banner',
   },
   {
@@ -38,10 +38,10 @@ const ROLES: LeadershipRole[] = [
       'Actively contributed to the ACM student community by coordinating events around programming, algorithms and tech culture.',
     highlights: [
       'Managed communication, logistics and schedules for workshops and events.',
-      'Encouraged participation in coding challenges and technical activities.',
-      'Helped create a structured and welcoming environment for students interested in CS and advanced technologies.',
+      'Participating in coding challenges and technical activities.',
+      'Helped create a structured and welcoming environment for students interested in CP and advanced technologies.',
     ],
-    imageSrc: '/clubs/acm-enstab-banner.png', // ⚠️ mets ici ton image ACM
+    imageSrc: '/clubs/image.png', // ⚠️ mets ici ton image ACM
     imageAlt: 'ACM Student Chapter ENSTAB banner',
   },
 ];
@@ -62,7 +62,7 @@ export function Leadership() {
             className="group relative overflow-hidden rounded-3xl border border-slate-800/80 bg-slate-950/80 shadow-[0_0_45px_rgba(0,0,0,0.55)]"
           >
             {/* BANNIÈRE AVEC IMAGE */}
-            <div className="relative h-32 md:h-40 overflow-hidden">
+            <div className="relative h-60 md:h-80 overflow-hidden">
               <img
                 src={item.imageSrc}
                 alt={item.imageAlt}

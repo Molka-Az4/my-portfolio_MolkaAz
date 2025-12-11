@@ -37,8 +37,8 @@ export function About() {
                 end-to-end systems
               </span>
               : from collecting and cleaning data, to building analytics and
-              machine-learning experiments, and then integrating them into modern
-              web experiences using <span className="text-emerald-300">React / Next.js</span>{' '}
+              IoT experiments, and then integrating them into modern
+              web experiences using <span className="text-emerald-300">frontend frameworks</span>{' '}
               and automation tools like <span className="text-emerald-300">n8n</span> and REST
               APIs. I&apos;m especially interested in use cases where AI augments
               human decision-making instead of replacing it.
